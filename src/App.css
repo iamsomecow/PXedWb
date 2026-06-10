@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+:root {
+  --grid-cols: 32;
+  --grid-rows: 32;
+}
+
+.pixel-grid {
+  display: grid;
+  grid-template-columns: repeat(var(--grid-cols), 1fr);
+  grid-template-rows: repeat(var(--grid-rows), 1fr);
+  user-select: none; 
+  -webkit-user-drag: none;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
